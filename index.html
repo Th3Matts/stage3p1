@@ -22,25 +22,27 @@
   
     <form>
       <fieldset>
-        <legend>Informações do Evento</legend>
-
-        <div class="input-wrapper" id="primeiroInput">
-          <label for="event-title"> Título do evento <span>(minimo 8 caracteres)</span></label>
-          <input type="text" id="event-title">
+        <div class="fieldset-wrapper">
+        
+          <legend>Informações do Evento</legend>
+  
+          <div class="input-wrapper" id="primeiroInput">
+            <label for="event-title"> Título do evento <span>(minimo 8 caracteres)</span></label>
+            <input type="text" id="event-title">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-link"> Link do evento <span>(comece com https://)</span></label>
+            <input type="url" name="" id="event-link">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="contact"> Whatsapp para contato <span>(somente números)</span></label>
+            <input type="tel" name="" id="contact">
+          </div>
+  
         </div>
-
-        <div class="input-wrapper">
-          <label for="event-link"> Link do evento <span>(comece com https://)</span></label>
-          <input type="url" name="" id="event-link">
-        </div>
-
-        <div class="input-wrapper">
-          <label for="contact"> Whatsapp para contato <span>(somente números)</span></label>
-          <input type="tel" name="" id="contact">
-        </div>
-
-      </fieldset>
-      
+        </fieldset>
     </form>
   </div>
 </body>

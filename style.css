@@ -74,6 +74,10 @@ form{
 
 fieldset{
   border: none;
+}
+
+.fieldset-wrapper{
+  border: none;
 
   display: flex;
   flex-direction: column;
@@ -121,10 +125,6 @@ fieldset legend{
   line-height: 24px;
 
   padding-bottom: 8px;
-}
-
-#primeiroInput{
-  margin-top: 24px;
 }
 
 .input-wrapper label span{
