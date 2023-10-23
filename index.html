@@ -22,7 +22,6 @@
   
     <form>
       <fieldset>
-
         <div class="fieldset-wrapper">
 
           <legend>Informações do Evento</legend>
@@ -48,21 +47,23 @@
           </div>
 
           <div class="input-wrapper">
-            <label for="event-category"></label>
-            <select name="event-category" id="">
-              <option > abc </option>
-              <option > def </option>
-              <option > ghi </option>
+            <label for="event-category"> Categoria </label>
+            <select name="" id="event-category">
+              <option > Tipo do evento </option>
+              <option > Evento de familia </option>
+              <option > Confraternização da empresa </option>
+              <option > Aniversário de debutante </option>
             </select>
           </div>
   
         </div>
+      </fieldset>
 
+      <fieldset>
         <div class="fieldset-wrapper">
-
           <legend> Privacidade </legend>
   
-          <div class="input-wrapper" id="primeiroInput">
+          <div class="input-wrapper" id="segundoInput">
             <label for="event-mail"> E-mail do administrador <span>(digite um email válido)</span></label>
             <input type="email" id="event-mail">
           </div>
@@ -73,28 +74,40 @@
           </div>
 
           <div class="input-checkbox">
-            <input type="checkbox" id="event-private">
+            <input type="checkbox" class="event-private">
             <label for="event-private"> Evento privado </label>
           </div>
-  
         </div>
+      </fieldset>
 
+      <fieldset>
         <div class="fieldset-wrapper">
-
-          <legend> Data e hora </legend>
+      
+            <legend> Data e hora </legend>
+            <div class="event-date">
   
-          <div class="input-wrapper" id="primeiroInput">
-            <label for="event-date"> data </span></label>
-            <input type="time" id="event-date">
-          </div>
-        </div>
-        
+              <div id="day-wrapper">
+                <label for="event-day"> Data </span></label>
+                <input type="date" id="event-day">
+              </div>
+    
+              <div class="time-wrapper">
+                <label for="event-begin"> Das </span></label>
+                <input type="time" id="event-from">
+              </div>
+    
+              <div class="time-wrapper">
+                <label for="event-end"> Até </span></label>
+                <input type="time" id="event-to">
+              </div>
+            </div>  
+        </div> 
       </fieldset>
       
       <div class="submit-retangle">
-        <input type="submit" value="Salvar evento">
+        <input class="submit-button" type="submit" value="Salvar evento">
       </div>
-
+      
     </form>
   </div>
 </body>
